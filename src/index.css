@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.background-image {
+    background: url('./assets/hero-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 96px);
+}
+
+.background-image-mars {
+    background: url('./assets/mars-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 96px);
+}
+
+.content-full-height {
+    height: calc(100vh - 96px);
+}
+
+.background-video {
+    position: relative;
+    height: calc(100vh - 96px);
+    overflow: hidden;
+}
+
+.background-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
